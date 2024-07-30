@@ -14,7 +14,7 @@
 	     - output: returns login page
 	
 	HTML/Thymleaf:
-	 - This files should be added to static.
+	 - This files should be added to static folder of spring boot project structure.
 	 
 	Controllers:
 	 - @Controller to create resource or controllers.
