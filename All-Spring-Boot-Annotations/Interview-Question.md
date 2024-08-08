@@ -2,7 +2,7 @@
 
 <details>
 <summary> Session Annotations: </summary>
- 1. @SessionAttribute
- 2. @SessionAttributes
+1. @SessionAttribute
+2. @SessionAttributes
   
 </details>
