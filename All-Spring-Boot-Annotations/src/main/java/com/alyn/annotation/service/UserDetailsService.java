@@ -32,4 +32,21 @@ public class UserDetailsService {
 		}
 		return true;
 	}
+	
+	public UserDetailsNtt getUserDetailsLoginId(String userId){
+		return userDetailsRepo.findByLoginId(userId);
+	}
+	
+	public UserDetailsNtt saveUser(UserDetailsModel userDetailsModel) {
+		UserDetailsNtt userDetailsNtt = new UserDetailsNtt();
+		userDetailsNtt.setFirstName(userDetailsModel.getFirstName());
+		userDetailsNtt.setLastName(userDetailsModel.getLastName());
+		userDetailsNtt.setCountry(userDetailsModel.getCountry());
+		userDetailsNtt.setEmail(userDetailsModel.getEmail());
+		userDetailsNtt.setGender(userDetailsModel.getGender());
+		userDetailsNtt.setLoginId(userDetailsModel.getLoginId());
+		userDetailsNtt.setPhoneNumber(userDetailsModel.getPhoneNumber());
+		
+		return userDetailsRepo.save(userDetailsNtt);
+	}
 }
